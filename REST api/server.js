@@ -1,8 +1,8 @@
 import bodyParser from "body-parser";
 import express from "express";
 import routes from "./routes/routes.js";
-const app = express();
 const port = 3000;
+const app = express();
 
 // Use Node.js body parsing middleware
 app.use(bodyParser.json());

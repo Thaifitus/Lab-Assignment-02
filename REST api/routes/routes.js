@@ -1,24 +1,24 @@
-const users = [
-    {
-      id: 1,
-      name: "Richard Hendricks",
-      email: "richard@piedpiper.com",
-    },
-    {
-      id: 2,
-      name: "Bertram Gilfoyle",
-      email: "gilfoyle@piedpiper.com",
-    },
-  ];
-const router = (app) => {
-    app.get("/", (request, response) => {
+// Load the MySQL pool connection
+import pool from '../data/config.js';
+
+// Route the app
+const router = app => {
+    // Display welcome message on the root
+    app.get('/', (request, response) => {
         response.send({
-            message: "Node.js and Express REST API",
+            message: 'Welcome to the Node.js Express REST API!'
         });
     });
-    app.get("/users", (request, response) => {
-        response.send(users);
+
+    // Display all users
+    app.get('/users', (request, response) => {
+        pool.query('SELECT * FROM users', (error, result) => {
+            if (error) throw error;
+
+            response.send(result);
+        });
     });
-};
+}
+
 // Export the router
 export default router;
