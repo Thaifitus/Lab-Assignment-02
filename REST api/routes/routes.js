@@ -9,12 +9,10 @@ const router = app => {
             message: 'Welcome to the Node.js Express REST API!'
         });
     });
-
     // Display all users
     app.get('/users', (request, response) => {
         pool.query('SELECT * FROM users', (error, result) => {
             if (error) throw error;
-
             response.send(result);
         });
     });
