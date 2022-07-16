@@ -1,5 +1,4 @@
-Lab Assignment 01 - applied for students in TA HTThanh's groups
-Bài tập luyện tập cá nhân 1
+Bài tập luyện tập cá nhân 2
 
 
 
@@ -11,7 +10,7 @@ Bài tập luyện tập cá nhân 1
 
 
 
-- Đối với bài tập 1, chỉ yêu cầu cơ bản, ko cần thao tác với cơ sở dữ liệu.
+- Đối với bài tập 2, yêu cầu code phải có tương tác với backend hoặc với cơ sở dữ liệu.
 
 + Nếu SV code frontend trong project thì làm và nộp một tutorial về React, về Angular, về VueJS, về ReactNative, về Android, về iOS hoặc về Flutter, về code C#.
 
@@ -33,7 +32,7 @@ Bài tập luyện tập cá nhân 1
 
 
 
-- Nộp bài: đặt tên YourStudentID_YourGroupID_BTLT01.zip bao gồm:
+- Nộp bài: đặt tên YourStudentID_YourGroupID_BTLT02.zip bao gồm:
 
 + Thư mục source code.
 
